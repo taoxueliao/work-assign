@@ -18,6 +18,22 @@
 - 编译器：`C:/Qt/Tools/mingw810_64/bin/g++.exe`
 - Python 3 可选，只在不用 `.bat` 时需要，且只用标准库
 
+## 换开发机要改的路径
+
+只拷 `dist` 到另一台电脑运行时，不用改下面任何文件。下面是换一台用来编译的电脑，而且 Qt、MinGW 或 CMake 的安装位置和现在不同时要改的地方。装在原来的 `C:\Qt\5.15.2` 和 `C:\Qt\Tools\mingw810_64` 就不用动预设和脚本。
+
+`debug`、`release` 预设继承 `qt5.15.2-mingw64`，所以编译路径只改这一处。
+
+| 文件 | 改成新机器上的路径 |
+| --- | --- |
+| `CMakePresets.json` 里的 `qt5.15.2-mingw64` | `CMAKE_PREFIX_PATH`（Qt 目录）、`gcc.exe`、`g++.exe`、`mingw32-make.exe`，以及 `environment` 里的 `PATH` |
+| `scripts/run-debug.ps1`、`scripts/publish-release.ps1` | Qt 的 `bin`、MinGW 的 `bin` |
+| `scripts/run-debug.py`、`scripts/publish-release.py` | 同上，变量名是 `QT_BIN`、`MINGW_BIN` |
+| `.vscode/settings.json` | `cmake.cmakePath`、`g++.exe`、`gdb.exe`，以及调试用的 `PATH`。只用脚本、不用编辑器调试时可以不改 |
+| `.vscode/launch.json` | `gdb.exe`，以及调试用的 `PATH` |
+
+源码、`CMakeLists.txt` 和 QML 里没有写这台电脑的安装路径。
+
 ## 构建产物
 
 编译和打包只产生下面三处。`build/` 和 `dist/` 已写入 `.gitignore`，不会进仓库。
