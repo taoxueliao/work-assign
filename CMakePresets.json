@@ -16,12 +16,40 @@
       "environment": {
         "PATH": "C:/Qt/Tools/mingw810_64/bin;C:/Qt/5.15.2/mingw81_64/bin;$penv{PATH}"
       }
+    },
+    {
+      "name": "debug",
+      "displayName": "Debug",
+      "inherits": "qt5.15.2-mingw64",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "release",
+      "displayName": "Release",
+      "inherits": "qt5.15.2-mingw64",
+      "binaryDir": "${sourceDir}/build/release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
     }
   ],
   "buildPresets": [
     {
       "name": "qt5.15.2-mingw64",
       "configurePreset": "qt5.15.2-mingw64"
+    },
+    {
+      "name": "debug",
+      "configurePreset": "debug",
+      "targets": ["app"]
+    },
+    {
+      "name": "release",
+      "configurePreset": "release",
+      "targets": ["app"]
     }
   ]
 }
