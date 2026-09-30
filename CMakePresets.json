@@ -5,13 +5,14 @@
       "name": "qt5.15.2-mingw64",
       "displayName": "Qt 5.15.2 MinGW 64-bit",
       "generator": "MinGW Makefiles",
-      "binaryDir": "${sourceDir}/build",
+      "binaryDir": "${sourceDir}/build/debug",
       "cacheVariables": {
         "CMAKE_PREFIX_PATH": "C:/Qt/5.15.2/mingw81_64",
         "CMAKE_C_COMPILER": "C:/Qt/Tools/mingw810_64/bin/gcc.exe",
         "CMAKE_CXX_COMPILER": "C:/Qt/Tools/mingw810_64/bin/g++.exe",
         "CMAKE_MAKE_PROGRAM": "C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe",
-        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+        "CMAKE_POLICY_VERSION_MINIMUM": "3.5"
       },
       "environment": {
         "PATH": "C:/Qt/Tools/mingw810_64/bin;C:/Qt/5.15.2/mingw81_64/bin;$penv{PATH}"
@@ -21,7 +22,7 @@
       "name": "debug",
       "displayName": "Debug",
       "inherits": "qt5.15.2-mingw64",
-      "binaryDir": "${sourceDir}/build",
+      "binaryDir": "${sourceDir}/build/debug",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Debug"
       }

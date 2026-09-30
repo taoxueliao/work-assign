@@ -5,8 +5,8 @@
       "name": "Debug app",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/build/app.exe",
-      "cwd": "${workspaceFolder}/build",
+      "program": "${workspaceFolder}/build/debug/app.exe",
+      "cwd": "${workspaceFolder}/build/debug",
       "MIMode": "gdb",
       "miDebuggerPath": "C:/Qt/Tools/mingw810_64/bin/gdb.exe",
       "environment": [

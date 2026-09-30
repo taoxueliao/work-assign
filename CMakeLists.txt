@@ -9,7 +9,7 @@ set(CMAKE_AUTORCC ON)
 
 find_package(Qt5 REQUIRED COMPONENTS Core Qml Quick)
 
-add_executable(app
+add_executable(app WIN32
     src/main.cpp
     src/repository/JsonWordSource.cpp
     src/service/RandomAssigner.cpp

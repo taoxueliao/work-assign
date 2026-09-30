@@ -10,7 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 QT_BIN = Path(r"C:\Qt\5.15.2\mingw81_64\bin")
 MINGW_BIN = Path(r"C:\Qt\Tools\mingw810_64\bin")
-EXE = ROOT / "build" / "app.exe"
+EXE = ROOT / "build" / "debug" / "app.exe"
 
 PROCESS_QUERY_LIMITED_INFORMATION = 0x1000
 PROCESS_TERMINATE = 0x0001
