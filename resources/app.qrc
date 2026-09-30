@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>words/words.json</file>
+        <file>words/postgraduate.json</file>
+        <file alias="qml/Main.qml">../qml/Main.qml</file>
+        <file alias="qml/theme/Theme.qml">../qml/theme/Theme.qml</file>
+        <file alias="qml/theme/qmldir">../qml/theme/qmldir</file>
+        <file alias="qml/pane/LeftPane.qml">../qml/pane/LeftPane.qml</file>
+        <file alias="qml/pane/RightPane.qml">../qml/pane/RightPane.qml</file>
+    </qresource>
+</RCC>

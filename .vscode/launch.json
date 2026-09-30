@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug app",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/app.exe",
+      "cwd": "${workspaceFolder}/build",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:/Qt/Tools/mingw810_64/bin/gdb.exe",
+      "environment": [
+        {
+          "name": "PATH",
+          "value": "C:/Qt/5.15.2/mingw81_64/bin;C:/Qt/Tools/mingw810_64/bin;${env:PATH}"
+        }
+      ]
+    }
+  ]
+}

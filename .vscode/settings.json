@@ -1,0 +1,19 @@
+{
+  "cmake.cmakePath": "D:/cmake/bin/cmake.exe",
+  "cmake.useCMakePresets": "always",
+  "cmake.configurePreset": "qt5.15.2-mingw64",
+  "cmake.buildPreset": "qt5.15.2-mingw64",
+  "C_Cpp.default.compilerPath": "C:/Qt/Tools/mingw810_64/bin/g++.exe",
+  "C_Cpp.default.intelliSenseMode": "windows-gcc-x64",
+  "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
+  "cmake.debugConfig": {
+    "MIMode": "gdb",
+    "miDebuggerPath": "C:/Qt/Tools/mingw810_64/bin/gdb.exe",
+    "environment": [
+      {
+        "name": "PATH",
+        "value": "C:/Qt/5.15.2/mingw81_64/bin;C:/Qt/Tools/mingw810_64/bin;${env:PATH}"
+      }
+    ]
+  }
+}
